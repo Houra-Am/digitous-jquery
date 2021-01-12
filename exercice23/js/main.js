@@ -4,7 +4,6 @@ $(document).ready(function() {
                 "bottom": "-=110px",
                 "left": "+=960px"
             },
-
             "slow")
 
     });
