@@ -1,9 +1,11 @@
 $(document).ready(function() {
     $("button").click(function() {
+        $("#bg").css({
+            position: "absolute",
+        });
         $("#bg").animate({
-            marginLeft: '100px',
-            //right: "100px",
-
+            left: "100px",
+            //marginLeft: '100px',
         });
     });
 
