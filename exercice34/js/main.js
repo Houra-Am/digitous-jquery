@@ -1,11 +1,11 @@
 $(document).ready(function() {
     $("button").click(function() {
-        $("input").val(function(n, c) {
-            return c + " https://restcountries.eu/rest/v2/name/usa";
-        });
+
+        var input = $("input").val().toString();
+        var url = "https://restcountries.eu/rest/v2/name/" + input;
 
         $.ajax({
-            url: "https://restcountries.eu/rest/v2/name/usa",
+            url: url,
             success: function(data, status, response) {
                 console.log(response.status);
                 $("#country").html(data.map(function(country) {
